@@ -1,0 +1,16 @@
+{
+    "ACCOUNT": {
+
+
+        "Lbl_Account": "Account",
+        "Lbl_SingIn": "SingIn",
+        "Lbl_Name": "Name",
+        "Lbl_LogOut": "LogOut",
+        "Lbl_Password": "Password"
+
+    },
+    "HOME": {
+        "Lbl_Welcome": "Welcome"
+
+    }
+}

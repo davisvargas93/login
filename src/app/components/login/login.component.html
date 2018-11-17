@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <div class="form-group">
+                <span class="text-danger" *ngIf="!isValid(user) ">dato invaliddo</span>
+                <span class="text-danger" *ngIf="userConfirmated">Usuario Invalido</span>
+                <label for="exampleInputEmail1">usuario</label>
+                <input name="user" type="text" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="user">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <span class="text-danger" *ngIf="!isValid(pass)">dato invaliddo</span>
+                <span class="text-danger" *ngIf="userConfirmated">Contraseña Invalida</span>
+                <label for="exampleInputPassword1">Password</label>
+                <input neme="pass" [(ngModel)]="pass" type="password" class="form-control" id="pass" placeholder="Password">
+            </div>
+            <button type="submit" (click)="validar()" class="btn btn-primary">Submit</button>
+            <span class="text-danger" *ngIf="isErrorUser">El Usuario yuk</span>
+        </div>
+    </div>
+</div>
